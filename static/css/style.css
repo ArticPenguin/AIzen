@@ -1,0 +1,147 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #05060a;
+    color: #e5e7eb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* 사이드바 */
+.sidebar {
+    width: 260px;
+    background: #070912;
+    padding: 20px;
+    box-shadow: inset -1px 0 0 rgba(0,255,255,0.1);
+}
+
+/* 로고 */
+.brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.logo {
+    width: 42px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00f6ff;
+    text-shadow: 0 0 10px #00f6ff;
+}
+
+/* 앱 메뉴 */
+.app-item {
+    padding: 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #9ca3af;
+}
+
+.app-item.active,
+.app-item:hover {
+    background: rgba(0,246,255,0.1);
+    color: #00f6ff;
+    box-shadow: 0 0 8px rgba(0,246,255,0.4);
+}
+
+/* 구분선 */
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00f6ff, transparent);
+    margin: 20px 0;
+}
+
+/* 채팅 기록 */
+.history-title {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.history-item {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 메인 */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 */
+.header {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0,255,255,0.15);
+    color: #00f6ff;
+    text-shadow: 0 0 8px rgba(0,246,255,0.6);
+}
+
+/* 채팅 영역 */
+.chat-box {
+    flex: 1;
+    padding: 12px 16px;
+    overflow-y: auto;
+}
+
+/* 메시지 */
+.msg {
+    max-width: 70%;
+    margin-bottom: 6px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    line-height: 1.4;
+}
+
+.msg.user {
+    margin-left: auto;
+    background: linear-gradient(135deg, #2563eb, #00f6ff);
+    color: #000;
+}
+
+.msg.ai {
+    background: #0f172a;
+    border: 1px solid rgba(0,246,255,0.3);
+    box-shadow: 0 0 10px rgba(0,246,255,0.2);
+}
+
+/* 입력 */
+.input-area {
+    display: flex;
+    padding: 14px 16px;
+    border-top: 1px solid rgba(0,255,255,0.15);
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    background: #020617;
+    color: #fff;
+    border: 1px solid rgba(0,246,255,0.4);
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #00f6ff;
+    color: #000;
+    box-shadow: 0 0 12px rgba(0,246,255,0.8);
+}

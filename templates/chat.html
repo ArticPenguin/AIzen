@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>AIzen</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="/static/img/aizen_logo.png" class="logo">
+            <span class="brand-text">AIzen</span>
+        </div>
+
+        <div class="apps">
+            <div class="app-item active">💬 채팅</div>
+            <div class="app-item">📄 문서</div>
+            <div class="app-item">🖼 이미지</div>
+            <div class="app-item">📊 PPT</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="history">
+            <div class="history-title">채팅 기록</div>
+            <div class="history-item">새 대화</div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="header">AIzen Chat</header>
+
+        <div id="chat-box" class="chat-box"></div>
+
+        <div class="input-area">
+            <input id="user-input" placeholder="AIzen에게 물어보세요">
+            <button id="send-btn">▶</button>
+        </div>
+    </main>
+
+</div>
+
+<script src="/static/js/chat.js"></script>
+</body>
+</html>
